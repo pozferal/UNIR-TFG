@@ -1,0 +1,303 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Rumbo">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/tabs_style"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/rumbo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                            </LinearLayout>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:stretchColumns="2">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                    <android.support.constraint.ConstraintLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/txtGymActiva"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="16dp"
+                                            android:layout_marginStart="8dp"
+                                            android:textSize="22sp"
+
+                                            android:gravity="center_horizontal"
+                                            android:text="Gymkana activa:"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            android:layout_marginTop="16dp" />
+
+                                        <TextView
+                                            android:id="@+id/txtPoi"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:layout_marginTop="9dp"
+                                            android:textSize="16sp"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                                            android:text="@string/SiguientePOI"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtGymActiva"
+                                            tools:text="@string/SiguientePoi" />
+
+                                        <TextView
+                                            android:id="@+id/txtDistancia"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="8dp"
+                                            android:layout_marginStart="8dp"
+                                            android:layout_marginTop="8dp"
+                                            android:textSize="16sp"
+                                            android:text="@string/Distancia"
+                                            app:layout_constraintLeft_toLeftOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtPoi" />
+
+                                    </android.support.constraint.ConstraintLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" >
+
+                                    <android.support.constraint.ConstraintLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="110dp"
+                                        android:layout_weight="1"
+                                        tools:layout_editor_absoluteX="8dp"
+                                        tools:layout_editor_absoluteY="8dp">
+
+
+                                        <Button
+                                            android:id="@+id/btnOtraVez"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            android:drawableLeft="@drawable/ic_restart"
+                                            android:drawablePadding="8dp"
+                                            android:textColor="@android:color/white"
+                                            android:backgroundTint="#49678D"
+
+                                            android:text="¿Quieres comenzar de nuevo esta Gymkana?" />
+
+                                        <ImageView
+                                            android:id="@+id/imgMeta"
+                                            android:layout_width="150dp"
+                                            android:layout_height="116dp"
+                                            app:srcCompat="@drawable/ic_andando"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            android:layout_marginTop="8dp"
+                                            android:layout_marginLeft="8dp"
+                                            app:layout_constraintLeft_toLeftOf="parent" />
+
+                                        <Button
+                                            android:id="@+id/btnVerDesc"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+
+                                            android:drawableLeft="@drawable/ic_magnifier"
+                                            android:drawablePadding="8dp"
+                                            android:textColor="@android:color/white"
+                                            android:backgroundTint="#49678D"
+
+
+
+                                            android:text="Ver detalles"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                            tools:layout_editor_absoluteY="31dp"
+                                            app:layout_constraintLeft_toRightOf="@+id/imgMeta"
+                                            android:layout_marginLeft="8dp" />
+                                    </android.support.constraint.ConstraintLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </TableLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textNoBrujula"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="44dp"
+                                    android:text="Tu móvil no tiene brújula disponible. Puedes llegar al siguiente punto siguiendo el mapa"
+                                    app:layout_constraintTop_toBottomOf="@+id/btnContinuar"
+                                    android:layout_marginRight="-35dp"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    android:layout_marginLeft="16dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imgCorona"
+                                    android:layout_width="242dp"
+                                    android:layout_height="199dp"
+                                    android:layout_marginLeft="67dp"
+                                    android:layout_marginTop="48dp"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:srcCompat="@drawable/ic_branch_2024271"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/imageNorte"
+                                    android:layout_width="168dp"
+                                    android:layout_height="177dp"
+                                    android:foregroundGravity="center_horizontal"
+                                    app:srcCompat="@drawable/norte"
+                                    android:layout_marginTop="10dp"
+                                    app:layout_constraintTop_toBottomOf="@+id/btnContinuar"
+                                    android:layout_marginLeft="96dp"
+                                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/flecha"
+                                    android:layout_width="102dp"
+                                    android:layout_height="95dp"
+                                    app:srcCompat="@drawable/flecha"
+                                    app:layout_constraintTop_toTopOf="@+id/imageNorte"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_marginLeft="33dp"
+                                    app:layout_constraintLeft_toLeftOf="@+id/imageNorte" />
+
+                                <Button
+                                    android:id="@+id/btnContinuar"
+                                    android:layout_width="326dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:drawableLeft="@drawable/ic_question_sign"
+                                    android:drawablePadding="8dp"
+                                    android:textColor="@android:color/white"
+                                    android:backgroundTint="#49678D"
+
+                                    android:text="Continuar al siguiente punto"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_marginLeft="17dp"
+                                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                            </android.support.constraint.ConstraintLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.MapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/conseguido"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPuntosAcumulados"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:layout_marginTop="4sp"
+                        android:gravity="center_horizontal"
+                        android:text="Puntos acumulados:"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/RecView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"/>
+
+                            <ListView
+                                android:id="@+id/listaConseguidos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</FrameLayout>

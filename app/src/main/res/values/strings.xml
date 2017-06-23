@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GymkanaTuristica</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="GymkanaTuristica">Gymkana Turística</string>
+    <string name="elveruatgmail">elveru@gmail.com</string>
+    <string name="ImportarDatos">Importar datos</string>
+    <string name="EscogerGymkana">Escoger Gymkana</string>
+    <string name="VerPuntuaciones">Ver puntuaciones</string>
+    <string name="Acercade">Acerca de</string>
+    <string name="AcercadeDescripcion">Aplicación desarrollada como Trabajo Fin de Grado para los estudios de Grado en Ingeniería Informática de la Universidad Internacional de La Rioja (UNIR)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="IntroduceUrl">Introduce URL:</string>
+    <string name="url">url</string>
+    <string name="DescargarAhora">DescargarAhora</string>
+    <string name="SiguientePoi">Siguiente POI</string>
+    <string name="Distancia">Distancia</string>
+    <string name="SiguientePOI">Siguiente POI:</string>
+    <string name="connection_error">Error de conexión</string>
+    <string name="xml_error">Error en xml</string>
+    <string name="page_title">título de la página</string>
+    <string name="updated">Actualizado</string>
+    <string name="wifi_connected">WIFI conectada</string>
+    <string name="lost_connection">Se perdió la conexión</string>
+    <string name="urltext">http://bit.ly/GymkanaTuristica</string>
+</resources>

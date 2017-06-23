@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rumbo"
+            android:icon="@drawable/logo"
+            android:title="@string/app_name" />
+        <item
+            android:id="@+id/nav_importar"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="@string/ImportarDatos" />
+        <item
+            android:id="@+id/nav_escoger"
+            android:icon="@android:drawable/checkbox_on_background"
+            android:title="@string/EscogerGymkana" />
+        <item
+            android:id="@+id/nav_puntuaciones"
+            android:icon="@drawable/ic_medal_303422"
+            android:title="@string/VerPuntuaciones" />
+
+        <item
+            android:id="@+id/nav_acercade"
+            android:icon="@drawable/ic_information"
+            android:title="@string/Acercade" />
+
+
+    </group>
+
+</menu>
